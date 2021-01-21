@@ -2,7 +2,8 @@
     "name": "Lent MADPID Project - Tomas Lopez-Valcarcel",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "animation": "*"
     },
     "files": [
         "main.blocks",
