@@ -1,4 +1,4 @@
-tiles.setTilemap(tiles.createTilemap(hex`10001000020303030303030303030303030303060109090909090909090909090909090501090b0b0b0b0b090b0b090909090905010b0b090d0d0d0d0d0d0a0b0a090905010b0d090b0b090b0b090d0d0d0b0905010b0d0d0b090b0a0a0b0b0b0909090501090d0d0d0d0d0a090a090b0909090501090b0a090b0b0b0b090b0b0b09090501090b0a090b0a090d0d090a0b09090501090b0a090b090a090a090a0b09090c01090b0a0909090d09090a0a09090d050109090a090909090b0b0a09090909050109090a0a0d0d0d0d0a0b0b0909090501090b0b0b0b0b0909090909090b0905010909090d0d0d0d0d0d0d0b0b0b0b05070d0d0d040404040404040404040408`, img`
+tiles.setTilemap(tiles.createTilemap(hex`10001000020303030303030303030303030303060108080808080808080808080808080501080a0a0a0a0a080a0a080808080805010a0a080c0c0c0c0c0c090a09080805010a0c080a0a080a0a080c0c0c0a0805010a0c0c0a080a09090a0a0a0808080501080c0c0c0c0c090809080a0808080501080a09080a0a0a0a080a0a0a08080501080a09080a09080c0c08090a08080501080a09080a0809080908090a08080b01080a090808080c0808090908080c0501080809080808080a0a09080808080501080809090c0c0c0c090a0a0808080501080a0a0a0a0a0808080808080a0805010808080c0c0c0c0c0c0c0a0a0a0a050c0c0c0c040404040404040404040407`, img`
     . 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
     2 . . . . . . . . . . . . . . 2 
     2 . . . . . . . . . . . . . . 2 
@@ -15,7 +15,8 @@ tiles.setTilemap(tiles.createTilemap(hex`100010000203030303030303030303030303030
     2 . . . . . . . . . . . . . . 2 
     2 . . . 2 2 2 2 2 2 2 . . . . 2 
     2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 2 
-    `, [myTiles.transparency16,sprites.dungeon.darkGroundWest,sprites.dungeon.darkGroundNorthWest0,sprites.dungeon.darkGroundNorth,sprites.dungeon.darkGroundSouth,sprites.dungeon.darkGroundEast,sprites.dungeon.darkGroundNorthEast0,sprites.dungeon.darkGroundSouthWest0,sprites.dungeon.darkGroundSouthEast0,sprites.dungeon.darkGroundCenter,sprites.dungeon.darkGroundNorthWest1,sprites.dungeon.darkGroundNorthEast1,sprites.dungeon.doorLockedEast,sprites.dungeon.floorLight0], TileScale.Sixteen))
+    `, [myTiles.transparency16,sprites.dungeon.darkGroundWest,sprites.dungeon.darkGroundNorthWest0,sprites.dungeon.darkGroundNorth,sprites.dungeon.darkGroundSouth,sprites.dungeon.darkGroundEast,sprites.dungeon.darkGroundNorthEast0,sprites.dungeon.darkGroundSouthEast0,sprites.dungeon.darkGroundCenter,sprites.dungeon.darkGroundNorthWest1,sprites.dungeon.darkGroundNorthEast1,sprites.dungeon.doorLockedEast,sprites.dungeon.floorLight0], TileScale.Sixteen))
+scene.centerCameraAt(0, 10000000)
 let mySprite = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
@@ -35,4 +36,8 @@ let mySprite = sprites.create(img`
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
 mySprite.setPosition(0, 0)
+mySprite.ay = 200
 controller.moveSprite(mySprite)
+forever(function () {
+	
+})
