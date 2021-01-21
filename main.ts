@@ -35,9 +35,10 @@ let mySprite = sprites.create(img`
     . . . . . f f f f f f . . . . . 
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
-mySprite.setPosition(0, 0)
-mySprite.ay = 200
+mySprite.setPosition(28, 70)
+mySprite.ay = 500
 controller.moveSprite(mySprite)
+scene.cameraFollowSprite(mySprite)
 forever(function () {
 	
 })
